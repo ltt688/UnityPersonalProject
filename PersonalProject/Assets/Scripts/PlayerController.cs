@@ -16,7 +16,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         bool up = Input.GetKeyDown("up");
-        if (up == true || Input.touches[0].phase == TouchPhase.Began)
+        int touch = Input.touchCount;
+        if (up == true || touch >0)
         {
             GetComponent<Rigidbody>().AddForce(Vector3.up * jumpForce);
         }
