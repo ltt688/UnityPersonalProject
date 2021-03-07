@@ -15,11 +15,11 @@ public class GameManager : MonoBehaviour
     public GameObject titleScreen;
     public TextMeshProUGUI gameOverText;
     public Button restartButton;
-
+    private ObstaclesGenerator obstaclesGenerator;
     // Start is called before the first frame update
     void Start()
     {
-
+        obstaclesGenerator = GameObject.Find("ObstaclesGenerator").GetComponent<ObstaclesGenerator>();
     }
 
     // Update is called once per frame
@@ -51,6 +51,7 @@ public class GameManager : MonoBehaviour
     {
         titleScreen.gameObject.SetActive(false);
         isGameActive = true;
+        obstaclesGenerator.GenerateObstacles();
         bird.gameObject.SetActive(true);
         titleScreen.gameObject.SetActive(false);
     }

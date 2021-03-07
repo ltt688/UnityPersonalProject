@@ -11,13 +11,17 @@ public class ObstaclesGenerator : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        StartCoroutine(SpawnObstacles());
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void GenerateObstacles()
+    {
+        StartCoroutine(SpawnObstacles());
     }
 
     IEnumerator SpawnObstacles()
