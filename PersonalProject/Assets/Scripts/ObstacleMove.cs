@@ -18,7 +18,7 @@ public class ObstacleMove : MonoBehaviour
         if (gameManager.isGameActive)
         {
             transform.Translate(Vector3.left * speed * Time.deltaTime);
-            if (transform.position.x < -10.5)
+            if (transform.position.x < -15)
             {
                 Destroy(gameObject);
             }
