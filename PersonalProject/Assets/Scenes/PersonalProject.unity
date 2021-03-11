@@ -319,6 +319,8 @@ MonoBehaviour:
   bird: {fileID: 639581355}
   titleScreen: {fileID: 1299865565}
   gameOverText: {fileID: 307733741}
+  scoreText: {fileID: 0}
+  timeText: {fileID: 0}
   restartButton: {fileID: 265542606}
 --- !u!4 &202526393
 Transform:
@@ -1256,7 +1258,7 @@ GameObject:
   - component: {fileID: 733219039}
   - component: {fileID: 733219038}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UI Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
