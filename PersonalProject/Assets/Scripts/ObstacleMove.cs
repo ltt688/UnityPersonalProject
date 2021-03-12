@@ -25,9 +25,22 @@ public class ObstacleMove : MonoBehaviour
         }
     }
 
+
+    //wall collision effects
     private void OnTriggerEnter(Collider other)
     {
-        gameManager.GameOver();
-        Debug.Log("GameOver: crash the walls");
+        //not working
+        /*
+        if (other.gameObject.CompareTag("Projectile"))
+        {
+            Destroy(gameObject);
+        }
+        */
+
+        if (other.gameObject.CompareTag("Player"))
+        {
+            gameManager.GameOver();
+            Debug.Log("GameOver: crash the walls");
+        }
     }
 }

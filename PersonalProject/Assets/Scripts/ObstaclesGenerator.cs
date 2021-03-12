@@ -7,6 +7,7 @@ public class ObstaclesGenerator : MonoBehaviour
     public GameObject obstacle;
     private float spawnRate = 2.0f;
     private GameManager gameManager;
+
     // Start is called before the first frame update
     void Start()
     {

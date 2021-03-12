@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
     public float jumpForce = 250.0f;
     //adjust value to tune flying
     public float gravityModifier = 1.0f;
+    //public GameObject fireProjectile;
+
     //not working
     public Animator flyingAnimation;
 
@@ -39,5 +43,4 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
 }

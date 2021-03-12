@@ -16,7 +16,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI timeText;
     public Button restartButton;
-
+    public Button fireButton;
+    public GameObject projectilePrefab;
 
     private ObstaclesGenerator obstaclesGenerator;
     private int score;
@@ -60,6 +61,7 @@ public class GameManager : MonoBehaviour
     {
         titleScreen.gameObject.SetActive(false);
         isGameActive = true;
+        fireButton.gameObject.SetActive(true);
         score = 0;
         time = 0;
         //breaks game i'm not sure why
@@ -89,5 +91,15 @@ public class GameManager : MonoBehaviour
     {
         timeText.text = "Time: " + Mathf.Round(time);
         time += Time.deltaTime;
+    }
+
+    //fire projectile from bird
+    public void FireBirdProjectile()
+    {
+        Instantiate(projectilePrefab, bird.transform.position, projectilePrefab.transform.rotation);
+        if (transform.position.x > 15)
+        {
+            Destroy(gameObject);
+        }
     }
 }
