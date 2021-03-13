@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 110, y: -86}
+  m_AnchoredPosition: {x: 124.99997, y: -90}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &15746690
@@ -641,6 +641,8 @@ MonoBehaviour:
   timeText: {fileID: 15746690}
   restartButton: {fileID: 265542606}
   fireButton: {fileID: 1224497422}
+  projectilePrefab: {fileID: 5598933152648691511, guid: 4764050a6ebc4bc42b79ea2f9f38f88a,
+    type: 3}
 --- !u!4 &202526393
 Transform:
   m_ObjectHideFlags: 0
@@ -2193,7 +2195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1224497421
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2211,7 +2213,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -431448.9, y: -130735.18}
+  m_AnchoredPosition: {x: -554, y: -114}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1224497422
@@ -3203,7 +3205,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 110, y: -32}
+  m_AnchoredPosition: {x: 125, y: -42}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1596635307
@@ -3541,6 +3543,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1883562037}
   m_CullTransparentMesh: 0
+--- !u!95 &1896545810 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8730428808901121346, guid: a75ed419a377b704eb2f98e0593e9f5d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8730428807478212525}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1935599289
 GameObject:
   m_ObjectHideFlags: 0
@@ -3794,7 +3802,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &2505539621555422238
+--- !u!1001 &1300317139062047332
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3942,9 +3950,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8730428807913949981, guid: a75ed419a377b704eb2f98e0593e9f5d,
         type: 3}
-      propertyPath: fireProjectile
+      propertyPath: flyingAnimation
       value: 
-      objectReference: {fileID: 5598933152648691511, guid: 4764050a6ebc4bc42b79ea2f9f38f88a,
-        type: 3}
+      objectReference: {fileID: 1896545810}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a75ed419a377b704eb2f98e0593e9f5d, type: 3}
