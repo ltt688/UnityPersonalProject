@@ -18,10 +18,12 @@ public class GameManager : MonoBehaviour
     public Button restartButton;
     public Button fireButton;
     public GameObject projectilePrefab;
+    public List<GameObject> itemPrefabs;
 
     private ObstaclesGenerator obstaclesGenerator;
     private int score;
     private float time;
+    private float spawnInterval = 4.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -67,10 +69,27 @@ public class GameManager : MonoBehaviour
         //breaks game i'm not sure why
         //UpdateScore(0);
         obstaclesGenerator.GenerateObstacles();
+        StartCoroutine(SpawnItemRoutine());
         bird.gameObject.SetActive(true);
         titleScreen.gameObject.SetActive(false);
         //in this order UpdateScore works
         UpdateScore(0);
+    }
+
+
+    IEnumerator SpawnItemRoutine()
+    {
+        while (isGameActive)
+        {
+            yield return new WaitForSeconds(spawnInterval);
+            Vector3 spawnLocation = new Vector3(Random.Range(0, 8), Random.Range(-4, 4), 0);
+            int index = Random.Range(0, itemPrefabs.Count);
+
+            if (isGameActive)
+            {
+                Instantiate(itemPrefabs[index], spawnLocation, itemPrefabs[index].transform.rotation);
+            }
+        }
     }
 
 

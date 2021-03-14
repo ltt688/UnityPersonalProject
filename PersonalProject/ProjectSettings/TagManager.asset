@@ -7,6 +7,7 @@ TagManager:
   - Game Manager
   - Obstacle
   - Projectile
+  - Point Item
   layers:
   - Default
   - TransparentFX
