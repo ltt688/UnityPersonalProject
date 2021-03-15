@@ -10,12 +10,6 @@
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "6292ec5f",
-            "name": "com.unity3d.mobileremote",
-            "processId": 22474,
-            "exited": true
-        },
-        {
-            "deviceId": "6292ec5f",
             "name": "com.DefaultCompany.PersonalProject",
             "processId": 26594,
             "exited": true
@@ -42,6 +36,12 @@
             "deviceId": "6292ec5f",
             "name": "com.DefaultCompany.PersonalProject",
             "processId": 20547,
+            "exited": true
+        },
+        {
+            "deviceId": "6292ec5f",
+            "name": "com.DefaultCompany.PersonalProject",
+            "processId": 23249,
             "exited": true
         }
     ],
