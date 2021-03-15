@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "6292ec5f",
     "m_SelectedPackage": {
-        "deviceId": "6292ec5f",
-        "name": "com.DefaultCompany.PersonalProject",
-        "processId": 32465,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -12,19 +12,37 @@
             "deviceId": "6292ec5f",
             "name": "com.unity3d.mobileremote",
             "processId": 22474,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "6292ec5f",
             "name": "com.DefaultCompany.PersonalProject",
             "processId": 26594,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "6292ec5f",
             "name": "com.DefaultCompany.PersonalProject",
             "processId": 32465,
+            "exited": true
+        },
+        {
+            "deviceId": "6292ec5f",
+            "name": "com.DefaultCompany.PersonalProject",
+            "processId": 18814,
+            "exited": true
+        },
+        {
+            "deviceId": "6292ec5f",
+            "name": "com.unity3d.mobileremote",
+            "processId": 1155,
             "exited": false
+        },
+        {
+            "deviceId": "6292ec5f",
+            "name": "com.DefaultCompany.PersonalProject",
+            "processId": 20547,
+            "exited": true
         }
     ],
     "m_Tags": {

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3544296682525145698}
   - component: {fileID: 1489659230613389168}
   - component: {fileID: 6255045366157320179}
+  - component: {fileID: 1826793276}
   m_Layer: 0
   m_Name: PointApple
   m_TagString: Point Item
@@ -111,5 +112,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   pointVal: 1
-  itemAnimation: {fileID: 2624359269358677983, guid: cb5e7bda59eef804eb91077320ae883e,
-    type: 3}
+  itemAnimation: {fileID: 0}
+--- !u!95 &1826793276
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6040542782630234194}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1d707187d93bfa44daecb3edd0f276b8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
 {
     public bool isGameActive;
     public GameObject bird;
+    public static int screenWidth = Screen.width;
+    public static int screenHeight = Screen.height;
 
     //ui variables
     public GameObject titleScreen;
@@ -29,6 +31,14 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         obstaclesGenerator = GameObject.Find("ObstaclesGenerator").GetComponent<ObstaclesGenerator>();
+        /*
+        //adjust resolution as screen flips
+        if(screenWidth == Screen.width || screenHeight == Screen.height)
+        {
+            screenHeight = Screen.width - (640 * 2);
+            screenWidth = Screen.height - (360 * 2);
+            Screen.SetResolution(screenWidth, screenHeight, true);
+        }*/
     }
 
     // Update is called once per frame
